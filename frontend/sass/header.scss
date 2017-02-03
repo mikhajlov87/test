@@ -1,0 +1,64 @@
+header {
+  background: $body-background;
+  height: $header-height;
+  text-transform: capitalize;
+  position: absolute;
+  width: 100%;
+  a {
+    display: block;
+    height: inherit;
+  }
+}
+.logo {
+  float: left;
+  height: inherit;
+  line-height: $header-height;
+  margin-left: 25px;
+  img {
+    display: inline-block;
+    height: 44px;
+    margin-bottom: -8px;
+    width: 44px;
+  }
+  h1 {
+    color: $header-logo-color;
+    display: inline-block;
+    font-family: $header-font-logo;
+    font-size: 2.5em;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    margin: 0 0 0 10px;
+    text-decoration: none;
+    text-shadow: -1px -1px #a3a3a3;
+  }
+}
+nav ul {
+  margin-right: 10px;
+}
+.header-menu {
+  box-sizing: border-box;
+  float: right;
+  height: $header-height;
+  line-height: $header-height;
+  li {
+    @extend .header-menu;
+    float: left;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    @extend .header-menu;
+    color: $header-link-color;
+    font-family: $header-font-menu;
+    font-size: 1.5em;
+    padding: 15px 3px 0 3px;
+    margin: 0 15px;
+  }
+}
+.active {
+  border-bottom: 3px solid #5094f2;
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans+Condensed:300');
+
+body {
+  background: $body-background;
+}
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  width: $wrapper-size;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

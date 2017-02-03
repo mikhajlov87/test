@@ -1,0 +1,17 @@
+footer {
+  border-top: 1px solid #e5e5e5;
+  color: #999;
+  width: 100%;
+  p {
+    font-family: 'sans-serif';
+    letter-spacing: 0.03em;
+    margin: 30px 0 30px -80px;
+    text-align: center;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: #6f7173;
+    }
+  }
+}
